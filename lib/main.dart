@@ -96,7 +96,7 @@ class _FirstScreenState extends State<FirstScreen> {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const SubScreen(),
+                    builder: (context) => const SecondScreen(),
                   ),
                 );
               },
@@ -114,14 +114,14 @@ class _FirstScreenState extends State<FirstScreen> {
 }
 
 
-class SubScreen extends StatefulWidget {
-  const SubScreen({Key? key}) : super(key: key);
+class SecondScreen extends StatefulWidget {
+  const SecondScreen({Key? key}) : super(key: key);
 
   @override
-  State<SubScreen> createState() => _SubScreenState();
+  State<SecondScreen> createState() => _SecondScreenState();
 }
 
-class _SubScreenState extends State<SubScreen> {
+class _SecondScreenState extends State<SecondScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
